@@ -32,17 +32,17 @@ function currentLine(katzDeliLine){
   let result;
 
   if (katzDeliLine.length === 0){
-    result = message + " empty."
+    return result = message + " empty."
   } else{
     result = message +":";
     let person = []
 
     for (let i = 0; i < katzDeliLine.length; i++){
       person.push(` ${i+1}. ${katzDeliLine[i]}`)
-      result = result + person
     }
+
+  return result + person
 }
-return result
 }
 
 function acurrentLine(katzDeliLine){
